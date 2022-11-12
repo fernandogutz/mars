@@ -2,6 +2,14 @@ import './style.css'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import * as dat from 'dat.gui'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init({
+    duration: 1000,
+    offset: 100,
+    delay: 500
+});
 
 // Loading
 const textureLoader = new THREE.TextureLoader();
